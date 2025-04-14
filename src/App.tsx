@@ -1,12 +1,12 @@
 import Header from "../src/Components/Header";
 import Hero from "../src/Components/Hero";
 import About from "../src/Components/About";
-import ProjecTimeline from "../src/Components/ProjectTimeline";
+import ProjecTimeline from "./Components/Project";
 import Footer from "../src/Components/Footer";
 
 export default function App() {
   return (
-    <main className="scroll-smooth pt-20">
+    <main className="scroll-smooth p-20">
       <Header />
       <div id="home">
         <Hero />
