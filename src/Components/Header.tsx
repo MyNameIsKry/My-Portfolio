@@ -50,7 +50,9 @@ export default function Header() {
       }}
     >
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-        <div className="text-xl font-bold">Kilious Kry</div>
+        <a href="#home">
+          <div className="text-xl font-bold">Kilious Kry</div>
+        </a>
         <nav className="flex gap-6 text-sm">
           {navItems.map((item) => (
             <a
