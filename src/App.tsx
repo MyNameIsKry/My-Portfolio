@@ -1,8 +1,9 @@
 import Header from "../src/Components/Header";
 import Hero from "../src/Components/Hero";
 import About from "../src/Components/About";
-import ProjecTimeline from "./Components/Project";
+import Projects from "./Components/Project";
 import Footer from "../src/Components/Footer";
+import Skills from "./Components/Skills";
 
 export default function App() {
   return (
@@ -14,7 +15,12 @@ export default function App() {
       <div id="about">
         <About />
       </div>
-      <ProjecTimeline />
+      <div id="skills">
+        <Skills />
+      </div>
+      <div id="projects">
+        <Projects />
+      </div>
       <Footer />
     </main>
   );

@@ -4,7 +4,7 @@ export default function Hero() {
   return (
     <section className="h-screen flex flex-col justify-center items-center text-center px-6">
       <motion.h1
-        className="text-5xl md:text-6xl font-bold mb-4"
+        className="text-5xl md:text-6xl font-bold mb-12"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
