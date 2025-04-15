@@ -20,7 +20,7 @@ export default function ProjectTimeline() {
     }, []);
 
     return (
-        <>
+        <div id="projects">
             <div className="text-center text-3xl font-bold mt-10">
                 Projects
             </div>
@@ -51,6 +51,6 @@ export default function ProjectTimeline() {
                     </motion.div>
                 ))}
             </div>
-        </>
+        </div>
     );
 }

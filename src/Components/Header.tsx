@@ -56,7 +56,7 @@ export default function Header() {
               key={item.label}
               href={item.href}
               onClick={() => setActive(item.label)}
-              className={`transition-all duration-200 ${
+              className={`transition-all duration-200 text-lg ${
                 active === item.label
                   ? "text-white"
                   : "text-gray-300 hover:text-white"
