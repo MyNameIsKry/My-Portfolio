@@ -7,7 +7,7 @@ import Skills from "./Components/Skills";
 
 export default function App() {
   return (
-    <main className="scroll-smooth p-20">
+    <main className="scroll-smooth md:px-20 px-8">
       <Header />
       <div id="home">
         <Hero />
