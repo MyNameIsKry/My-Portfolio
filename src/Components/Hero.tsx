@@ -25,7 +25,7 @@ export default function Hero() {
       </motion.p>
       <motion.a
         href="#projects"
-        className="mt-8 inline-block px-6 py-2 bg-[#1f2937] hover:bg-[#374151] rounded text-sm"
+        className="mt-8 inline-block px-6 py-2 bg-[#1f2937] hover:bg-[#374151] rounded text-sm z-50"
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
