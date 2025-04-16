@@ -6,7 +6,7 @@ export default function Cards() {
     const containerRef = useRef<HTMLDivElement | null>(null);
 
     return (
-        <div className="absolute inset-0 z-10 " ref={containerRef}>
+        <div className="absolute inset-0 z-10 pointer-events-none" ref={containerRef}>
             <Card
                 containerRef={containerRef}
                 src="./github.svg"
@@ -14,7 +14,7 @@ export default function Cards() {
                 rotate="6deg"
                 top="20%"
                 left="17%"
-                className="w-36 md:w-32 hover:cursor-grab active:cursor-grabbing"
+                className="w-36 md:w-32 hover:cursor-grab active:cursor-grabbing pointer-events-auto"
                 dura={0.6}
             />
             <Card
@@ -24,7 +24,7 @@ export default function Cards() {
                 rotate="12deg"
                 top="15%"
                 left="70%"
-                className="w-24 md:w-32 hover:cursor-grab active:cursor-grabbing"
+                className="w-24 md:w-32 hover:cursor-grab active:cursor-grabbing pointer-events-auto"
                 dura={0.6}
             />
             <Card
@@ -34,7 +34,7 @@ export default function Cards() {
                 rotate="-15deg"
                 top="60%"
                 left="70%"
-                className="w-52 md:w-32 hover:cursor-grab active:cursor-grabbing"
+                className="w-52 md:w-32 hover:cursor-grab active:cursor-grabbing pointer-events-auto"
                 dura={1}
             />
             <Card
@@ -44,7 +44,7 @@ export default function Cards() {
                 rotate="8deg"
                 top="50%"
                 left="5%"
-                className="w-48 md:w-32 hover:cursor-grab active:cursor-grabbing"
+                className="w-48 md:w-32 hover:cursor-grab active:cursor-grabbing pointer-events-auto"
                 dura={0.8}
             />
             <Card
@@ -54,7 +54,7 @@ export default function Cards() {
                 rotate="18deg"
                 top="60%"
                 left="20%"
-                className="w-40 md:w-32 hover:cursor-grab active:cursor-grabbing"
+                className="w-40 md:w-32 hover:cursor-grab active:cursor-grabbing pointer-events-auto"
                 dura={1}
             />
             <Card
@@ -64,7 +64,7 @@ export default function Cards() {
                 rotate="18deg"
                 top="30%"
                 left="80%"
-                className="w-40 md:w-32 hover:cursor-grab active:cursor-grabbing"
+                className="w-40 md:w-32 hover:cursor-grab active:cursor-grabbing pointer-events-auto"
                 dura={0.8}
             />
         </div>
@@ -122,7 +122,7 @@ const Card = ({
                 zIndex,
             }}
             className={twMerge(
-                "drag-elements absolute p-1",
+                "drag-elements absolute p-1 pointer-events-auto",
                 className
             )}
             src={src}
