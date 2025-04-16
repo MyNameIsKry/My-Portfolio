@@ -15,6 +15,7 @@ export default function Cards() {
                 top="20%"
                 left="17%"
                 className="w-36 md:w-32 hover:cursor-grab active:cursor-grabbing"
+                dura={0.6}
             />
             <Card
                 containerRef={containerRef}
@@ -24,6 +25,7 @@ export default function Cards() {
                 top="15%"
                 left="70%"
                 className="w-24 md:w-32 hover:cursor-grab active:cursor-grabbing"
+                dura={0.6}
             />
             <Card
                 containerRef={containerRef}
@@ -33,6 +35,7 @@ export default function Cards() {
                 top="60%"
                 left="70%"
                 className="w-52 md:w-32 hover:cursor-grab active:cursor-grabbing"
+                dura={1}
             />
             <Card
                 containerRef={containerRef}
@@ -42,6 +45,7 @@ export default function Cards() {
                 top="50%"
                 left="5%"
                 className="w-48 md:w-32 hover:cursor-grab active:cursor-grabbing"
+                dura={0.8}
             />
             <Card
                 containerRef={containerRef}
@@ -50,7 +54,8 @@ export default function Cards() {
                 rotate="18deg"
                 top="60%"
                 left="20%"
-                className="w-40 md:w-32hover:cursor-grab active:cursor-grabbing"
+                className="w-40 md:w-32 hover:cursor-grab active:cursor-grabbing"
+                dura={1}
             />
             <Card
                 containerRef={containerRef}
@@ -60,6 +65,7 @@ export default function Cards() {
                 top="30%"
                 left="80%"
                 className="w-40 md:w-32 hover:cursor-grab active:cursor-grabbing"
+                dura={0.8}
             />
         </div>
     );
@@ -73,6 +79,7 @@ interface Props {
     left: string;
     rotate: string;
     className?: string;
+    dura: number;
 }
 
 const Card = ({
@@ -83,6 +90,7 @@ const Card = ({
     left,
     rotate,
     className,
+    dura
 }: Props) => {
     const [zIndex, setZIndex] = useState(0);
 
@@ -124,9 +132,9 @@ const Card = ({
             // Uncomment below and remove dragElastic to remove movement after release
             //   dragMomentum={false}
             dragElastic={0.65}
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+            initial={{ opacity: 0, y: 80, scale: 0.85 }}
+            animate={{ opacity: 1, y: 0, scale: 1 }}
+            transition={{ duration: dura }}
         />
     );
 };
