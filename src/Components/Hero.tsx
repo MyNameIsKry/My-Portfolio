@@ -1,8 +1,12 @@
 import { motion } from "framer-motion";
+import Cards from "./DragCards";
 
 export default function Hero() {
   return (
-    <section className="h-screen flex flex-col justify-center items-center text-center px-6">
+    <motion.section 
+      className="min-h-screen flex flex-col justify-center items-center text-center px-6 overflow-x-hidden"
+    
+    >
       <motion.h1
         className="text-5xl md:text-6xl font-bold mb-12"
         initial={{ opacity: 0, y: -50 }}
@@ -27,6 +31,7 @@ export default function Hero() {
       >
         View Projects
       </motion.a>
-    </section>
+      <Cards/>
+    </motion.section>
   );
 }
