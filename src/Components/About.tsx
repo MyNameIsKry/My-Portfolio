@@ -2,8 +2,8 @@ import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <section className="py-20 bg-[#1a1c22]">
-      <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    <section className="py-20 px-4 bg-[#1a1c22]">
+      <div className="w-full mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center overflow-x-hidden">
         <motion.div
           initial={{ x: -80, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
@@ -14,7 +14,7 @@ export default function About() {
           <img
             src="./avatar.jpg"
             alt="My photo"
-            className="w-3/4 h-3/4 shadow-lg rounded-3xl"
+            className="md:w-3/4 md:h-3/4 w-1/2 h-1/2 shadow-lg rounded-3xl"
           />
         </motion.div>
         <motion.div

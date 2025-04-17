@@ -18,11 +18,10 @@ const CHARS = "!@#$%^&*():{};|,.<>/?";
 export default function Hero() {
   return (
     <motion.section
-      className="min-h-screen flex flex-col justify-center items-center text-center px-6 overflow-x-hidden"
-
+      className="min-h-screen w-full flex flex-col justify-center items-center text-center"
     >
       <motion.h1
-        className="text-5xl md:text-6xl font-bold mb-12"
+        className="text-4xl md:text-6xl font-bold mb-12"
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
@@ -30,7 +29,7 @@ export default function Hero() {
         backend.dev()
       </motion.h1>
       <motion.p
-        className="text-lg md:text-xl text-gray-400"
+        className="text-sm md:text-xl text-gray-400"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
