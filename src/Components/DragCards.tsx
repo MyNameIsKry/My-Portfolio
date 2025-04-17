@@ -6,7 +6,7 @@ export default function Cards() {
     const containerRef = useRef<HTMLDivElement | null>(null);
 
     return (
-        <div className="absolute inset-0 z-10 pointer-events-none" ref={containerRef}>
+        <div className="absolute inset-0 z-10 pointer-events-none overflow-x-hidden" ref={containerRef}>
             <Card
                 containerRef={containerRef}
                 src="./github.svg"

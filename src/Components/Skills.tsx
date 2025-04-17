@@ -16,37 +16,43 @@ import {
   SiDotnet,
   SiGit,
   SiGithub,
-  SiPostman
+  SiPostman,
+  SiDocker,
+  SiPrisma,
 } from "react-icons/si";
 import { motion } from "framer-motion";
 
 const skills = {
-  programmingLanguages: [
+  "Programming Laguages": [
     { name: "JavaScript", icon: SiJavascript },
     { name: "TypeScript", icon: SiTypescript },
     { name: ".Net", icon: SiDotnet },
   ],
-  frontend: [
+  "Frontend": [
     { name: "React", icon: SiReact },
     { name: "Next.js", icon: SiNextdotjs },
     { name: "Tailwind", icon: SiTailwindcss },
   ],
-  backend: [
+  "Backend": [
     { name: "Node.js", icon: SiNodedotjs },
     { name: "Express", icon: SiExpress },
     { name: "Fastify", icon: SiFastify },
     { name: "NestJs", icon: SiNestjs}
   ],
-  database: [
+  "Databases": [
     { name: "MySql", icon: SiMysql },
     { name: "MongoDB", icon: SiMongodb },
     { name: "SQLite", icon: SiSqlite },
+    { name: "Prisma", icon: SiPrisma },
   ],
-  tools: [
+  "Tools": [
     { name: "Github", icon: SiGithub },
     { name: "Git", icon: SiGit },
     { name: "Postman", icon: SiPostman },
   ],
+  "CI/CD": [
+    { name: "Docker", icon: SiDocker },
+  ]
 };
 
 export default function Skills() {
