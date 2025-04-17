@@ -10,7 +10,7 @@ export default function Cards() {
             <Card
                 containerRef={containerRef}
                 src="./github.svg"
-                alt="Example image"
+                alt="Github"
                 rotate="6deg"
                 top="20%"
                 left="17%"
@@ -20,7 +20,7 @@ export default function Cards() {
             <Card
                 containerRef={containerRef}
                 src="./nextjs.svg"
-                alt="Example image"
+                alt="NextJS"
                 rotate="12deg"
                 top="15%"
                 left="70%"
@@ -30,7 +30,7 @@ export default function Cards() {
             <Card
                 containerRef={containerRef}
                 src="./reactjs.svg"
-                alt="Example image"
+                alt="ReactJs"
                 rotate="-15deg"
                 top="60%"
                 left="70%"
@@ -40,7 +40,7 @@ export default function Cards() {
             <Card
                 containerRef={containerRef}
                 src="./nestjs.svg"
-                alt="Example image"
+                alt="NestJs"
                 rotate="8deg"
                 top="50%"
                 left="5%"
@@ -50,7 +50,7 @@ export default function Cards() {
             <Card
                 containerRef={containerRef}
                 src="./nodejs.svg"
-                alt="Example image"
+                alt="NodeJs"
                 rotate="18deg"
                 top="60%"
                 left="20%"
@@ -60,7 +60,7 @@ export default function Cards() {
             <Card
                 containerRef={containerRef}
                 src="./mongodb.svg"
-                alt="Example image"
+                alt=""
                 rotate="18deg"
                 top="30%"
                 left="80%"

@@ -45,7 +45,7 @@ export default function Header() {
     >
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         <a href="#home">
-          <div className="text-xl font-bold">Kilious Kry</div>
+          <div className="text-xl md:text-3xl font-bold">Kilious Kry</div>
         </a>
         <nav className="hidden md:flex gap-6 text-sm">
           {navItems.map((item) => (
@@ -53,7 +53,7 @@ export default function Header() {
               key={item.label}
               href={item.href}
               onClick={() => setActive(item.label)}
-              className={`transition-all duration-200 text-lg ${active === item.label
+              className={`transition-all duration-200 text-xl ${active === item.label
                   ? "text-white"
                   : "text-gray-300 hover:text-white"
                 }`}
