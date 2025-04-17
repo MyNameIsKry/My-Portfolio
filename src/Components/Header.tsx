@@ -41,7 +41,7 @@ export default function Header() {
           transition: { duration: 0.4 },
         },
       }}
-      className="fixed top-0 left-0 w-full z-50 text-white"
+      className="fixed top-0 left-0 w-full z-50 text-white bg-gradient-to-b from-gray-900 to-transparent"
     >
       <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
         <a href="#home">
